@@ -99,7 +99,7 @@ CONFIG_PACKAGE_etherwake=y
 CONFIG_PACKAGE_ethtool=y
 #
 # Network Support
-#
+##
 CONFIG_PACKAGE_kmod-9pnet=y
 CONFIG_PACKAGE_kmod-atm=y
 CONFIG_PACKAGE_kmod-ax25=y
