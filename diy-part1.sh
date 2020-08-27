@@ -26,4 +26,4 @@ sed -i '$a src-git lienol https://github.com/xiaoqingfengATGH/feeds-lienol.git' 
 sed -i '$a src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' feeds.conf.default
 sed -i '$a src-git homeclash https://github.com/xiaoqingfengATGH/homeclash.git' feeds.conf.default
 sed -i '$a src-git strongswanInDocker https://github.com/xiaoqingfengATGH/luci-app-strongswanInDocker.git' feeds.conf.default
-sed -i '$a src-git free https://github.com/305267382/lede-packages.git' feeds.conf.default
+#sed -i '$a src-git free https://github.com/305267382/lede-packages.git' feeds.conf.default
