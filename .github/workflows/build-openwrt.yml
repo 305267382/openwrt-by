@@ -14,11 +14,11 @@ on:
     types: published
   push:
     branches:
-      - master
+      - main
     paths:
       - '.config'
     schedule:
-      - cron: 0 20 * * *
+     - cron: 0 20 * * *
    watch:
      types: started
 
