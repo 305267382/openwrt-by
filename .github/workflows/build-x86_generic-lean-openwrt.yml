@@ -6,11 +6,11 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build x86_64 Lean's OpenWrt
+name: Build x86_generic Lean's OpenWrt
 
 on:
   repository_dispatch:
-    types: [lean, x86_64]
+    types: [lean, x86_generic]
   workflow_dispatch:
   release:
     types: published
@@ -22,8 +22,8 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: config/lean/x86/x86_64-lean-target.config
-  DEVICE: openwrt-x86-64-generic
+  CONFIG_FILE: config/lean/x86/x86_generic-lean-target.config
+  DEVICE: openwrt-x86-generic-generic
   DIY_SH: scripts/lean-openwrt.sh
   IPV6MOD_IN_FIRMWARE: true
   KMODS_IN_FIRMWARE: true
@@ -75,7 +75,7 @@ jobs:
         chmod +x scripts/*.sh
         cd $OPENWRTROOT
         ../$DIY_SH
-        ../scripts/preset-clash-core.sh amd64
+        ../scripts/preset-clash-core.sh 386
         ../scripts/preset-terminal-tools.sh
 
     - name: Download Package
